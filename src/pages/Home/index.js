@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
 import MetaDecorator from "../../Components/MetaDecorator";
-import image from '../../img/thumbnail.jpg'
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -9,7 +8,7 @@ const Home = () => {
       .then((response) => response.json())
       .then((json) => setPosts(json));
   }, []);
-  console.log("response", posts)
+  console.log("response", posts);
   return (
     <Fragment>
       <MetaDecorator

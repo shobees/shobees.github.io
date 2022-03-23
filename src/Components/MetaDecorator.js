@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import image from "../img/thumbnail.jpg";
 
-const MetaDecorator = ({ title, description, imageUrl, imageAlt }) => {
+const MetaDecorator = ({ title, description, imageUrl, videoUrl }) => {
   const hostName = "https://shobees.github.io/";
   return (
     <Helmet>
@@ -10,7 +10,11 @@ const MetaDecorator = ({ title, description, imageUrl, imageAlt }) => {
       <meta property="og:title" content={title} />
       <meta name="description" content={description} />
       <meta name="og:description" content={description} />
-      <meta property="og:image" content={imageUrl || hostName + image} />
+      {videoUrl ? (
+        <meta property="og:video" content={videoUrl} />
+      ) : (
+        <meta property="og:image" content={imageUrl || hostName + image} />
+      )}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         property="og:url"

@@ -14,6 +14,7 @@ const Home = () => {
       <MetaDecorator
         title={posts.length && posts[0].title}
         description={posts.length && posts[0].body}
+        videoUrl="https://www.youtube.com/watch?v=5Eqb_-j3FDA&list=RD5Eqb_-j3FDA&start_radio=1"
       />
       <div>Home</div>;
     </Fragment>

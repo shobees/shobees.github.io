@@ -8,13 +8,13 @@ const Home = () => {
       .then((response) => response.json())
       .then((json) => setPosts(json));
   }, []);
-  console.log("response", posts);
+  console.log("response", posts)
   return (
     <Fragment>
       <MetaDecorator
         title={posts.length && posts[0].title}
         description={posts.length && posts[0].body}
-        videoUrl="https://www.youtube.com/watch?v=5Eqb_-j3FDA&list=RD5Eqb_-j3FDA&start_radio=1"
+        imageUrl={"https://i.picsum.photos/id/1000/5626/3635.jpg?hmac=qWh065Fr_M8Oa3sNsdDL8ngWXv2Jb-EE49ZIn6c0P-g"}
       />
       <div>Home</div>;
     </Fragment>

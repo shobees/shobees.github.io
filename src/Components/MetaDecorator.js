@@ -14,10 +14,6 @@ const MetaDecorator = ({ title, description, imageUrl, imageAlt }) => {
         property="og:url"
         content={window.location.pathname + window.location.search}
       />
-      <meta property="og:type" content="video.movie" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={imageUrl} />
     </Helmet>
   );
 };

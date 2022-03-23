@@ -15,7 +15,6 @@ const Home = () => {
       <MetaDecorator
         title={posts.length && posts[0].title}
         description={posts.length && posts[0].body}
-        imageUrl={image}
       />
       <div>Home</div>;
     </Fragment>
